@@ -32,9 +32,11 @@ public class Program {
 		//sellerDao.insert(objInsert);
 		
 		System.out.println("\n=== Update ===");
-		Seller otherSeller = sellerDao.findById(11);
-		otherSeller.setName("Up alberto");
+		Seller otherSeller = sellerDao.findById(1);
 		//sellerDao.update(otherSeller);
+
+		System.out.println("\n=== delete ===");
+		sellerDao.deleteById(20);
 		
 		System.out.println("\n=== Find All ===");	
 		List<Seller> ListAll = sellerDao.findAll();
